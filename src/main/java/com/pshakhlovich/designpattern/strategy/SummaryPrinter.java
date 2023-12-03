@@ -1,7 +1,6 @@
 package com.pshakhlovich.designpattern.strategy;
 
 import java.util.Collection;
-import java.util.Iterator;
 
 //Concrete strategy
 public class SummaryPrinter implements OrderPrinter {

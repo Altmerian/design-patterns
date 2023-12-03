@@ -7,8 +7,8 @@ import java.io.IOException;
 //Handles incoming JSON requests that work on User
 public class UserController {
 
-    private UserPersistenceService persistenceService = new UserPersistenceService();
-    
+    private final UserPersistenceService persistenceService = new UserPersistenceService();
+
     //Create a new user
     public String createUser(String userJson) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
@@ -16,14 +16,14 @@ public class UserController {
 
         UserValidator validator = new UserValidator();
         boolean valid = validator.validateUser(user);
-        
-        if(!valid) {
+
+        if (!valid) {
             return "ERROR";
         }
 
         persistenceService.saveUser(user);
-        
+
         return "SUCCESS";
-    } 
+    }
 
 }

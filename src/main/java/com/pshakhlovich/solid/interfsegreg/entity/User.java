@@ -1,27 +1,27 @@
-package com.company.intersegrega.entity;
+package com.pshakhlovich.solid.interfsegreg.entity;
 
 import java.time.LocalDateTime;
 
-public class User extends Entity{
-	
-	private String name;
-	
-	private LocalDateTime lastLogin;
+public class User extends Entity {
 
-	public String getName() {
-		return name;
-	}
+    private String name;
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    private LocalDateTime lastLogin;
 
-	public LocalDateTime getLastLogin() {
-		return lastLogin;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setLastLogin(LocalDateTime lastLogin) {
-		this.lastLogin = lastLogin;
-	}
-	
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public LocalDateTime getLastLogin() {
+        return lastLogin;
+    }
+
+    public void setLastLogin(LocalDateTime lastLogin) {
+        this.lastLogin = lastLogin;
+    }
+
 }

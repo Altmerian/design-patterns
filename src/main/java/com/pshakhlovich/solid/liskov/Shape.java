@@ -1,7 +1,7 @@
-package com.company.liskov_1;
+package com.pshakhlovich.solid.liskov;
 
 public interface Shape {
-	
-	public int computeArea();
-	
+
+    int computeArea();
+
 }

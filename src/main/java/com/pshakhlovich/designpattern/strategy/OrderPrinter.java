@@ -4,6 +4,6 @@ import java.util.Collection;
 
 //Strategy
 public interface OrderPrinter {
-	
-	void print(Collection<Order> orders);
+
+    void print(Collection<Order> orders);
 }

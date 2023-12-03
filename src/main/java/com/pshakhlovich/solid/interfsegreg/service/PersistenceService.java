@@ -1,14 +1,14 @@
-package com.company.intersegrega.service;
+package com.pshakhlovich.solid.interfsegreg.service;
 
-import com.company.intersegrega.entity.Entity;
+import com.pshakhlovich.solid.interfsegreg.entity.Entity;
 
-//common interface to be implemented by all persistence services. 
+//common interface to be implemented by all persistence services.
 public interface PersistenceService<T extends Entity> {
 
-	public void save(T entity);
-	
-	public void delete(T entity);
-	
-	public T findById(Long id);
-	
+    void save(T entity);
+
+    void delete(T entity);
+
+    T findById(Long id);
+
 }

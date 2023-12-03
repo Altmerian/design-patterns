@@ -25,12 +25,12 @@ public class Main {
         if (!response.equalsIgnoreCase("SUCCESS")) {
             System.err.println("Failed");
         }
-        System.out.println(STR."Valid JSON received response: \{response}");
+        System.out.println(STR. "Valid JSON received response: \{ response }" );
         response = controller.createUser(INVALID_USER_JSON);
         if (!response.equalsIgnoreCase("ERROR")) {
             System.err.println("Failed");
         }
-        System.out.println(STR."Invalid JSON received response: \{response}");
+        System.out.println(STR. "Invalid JSON received response: \{ response }" );
     }
 
 }
