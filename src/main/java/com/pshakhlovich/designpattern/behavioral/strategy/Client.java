@@ -1,4 +1,4 @@
-package com.pshakhlovich.designpattern.strategy;
+package com.pshakhlovich.designpattern.behavioral.strategy;
 
 import java.util.LinkedList;
 
